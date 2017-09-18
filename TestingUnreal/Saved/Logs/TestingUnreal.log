@@ -1,12 +1,12 @@
-﻿Log file open, 09/18/17 16:09:52
+﻿Log file open, 09/18/17 16:28:09
 LogWindows: LoadLibraryWithSearchPaths failed for file aqProf.dll. GetLastError=0
 LogWindows: LoadLibraryWithSearchPaths failed for file VtuneApi.dll. GetLastError=0
 LogWindows: LoadLibraryWithSearchPaths failed for file VtuneApi32e.dll. GetLastError=0
 LogInit: Display: Running engine for game: TestingUnreal
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(1372353419) SRandInit(1372353419).
+LogInit: Display: RandInit(933727377) SRandInit(933727377).
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.152742
+LogStats: Stats thread started at 0.153642
 LogD3D11RHI: Aftermath initialized
 LogPluginManager: Mounting plugin Paper2D
 LogPluginManager: Mounting plugin LightPropagationVolume
@@ -29,6 +29,7 @@ LogPluginManager: Mounting plugin SpeedTreeImporter
 LogPluginManager: Mounting plugin AlembicImporter
 LogPluginManager: Mounting plugin CharacterAI
 LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin Substance
 LogPluginManager: Mounting plugin AndroidMedia
 LogPluginManager: Mounting plugin AvfMedia
 LogPluginManager: Mounting plugin MediaPlayerEditor
@@ -108,753 +109,151 @@ LogInit: Base directory: C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/Win
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.09.18-15.09.53:266][  0]LogInit: Selected Device Profile: [Windows]
-[2017.09.18-15.09.53:266][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.09.18-15.09.53:296][  0]LogInit: Computer: WINDOWS-7CI49S2
-[2017.09.18-15.09.53:296][  0]LogInit: User: AmplifiedRobotChris
-[2017.09.18-15.09.53:296][  0]LogInit: CPU Page size=4096, Cores=4
-[2017.09.18-15.09.53:296][  0]LogInit: High frequency timer resolution =3.515630 MHz
-[2017.09.18-15.09.53:297][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2017.09.18-15.09.53:297][  0]LogMemory: Platform Memory Stats for Windows
-[2017.09.18-15.09.53:297][  0]LogMemory: Process Physical Memory: 278.92 MB used, 278.92 MB peak
-[2017.09.18-15.09.53:297][  0]LogMemory: Process Virtual Memory: 282.26 MB used, 282.26 MB peak
-[2017.09.18-15.09.53:297][  0]LogMemory: Physical Memory: 5040.59 MB used,  11286.43 MB free, 16327.02 MB total
-[2017.09.18-15.09.53:297][  0]LogMemory: Virtual Memory: 681.88 MB used,  11286.43 MB free, 134217728.00 MB total
-[2017.09.18-15.09.53:448][  0]LogInit: Using OS detected language (en-US).
-[2017.09.18-15.09.53:448][  0]LogInit: Using OS detected locale (en-GB).
-[2017.09.18-15.09.53:450][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2017.09.18-15.09.53:944][  0]LogD3D11RHI: D3D11 adapters:
-[2017.09.18-15.09.53:985][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080' (Feature Level 11_0)
-[2017.09.18-15.09.53:985][  0]LogD3D11RHI:       8110/0/8163 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.09.18-15.09.53:986][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.09.18-15.09.53:986][  0]LogD3D11RHI:       0/0/8163 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.09.18-15.09.53:986][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.09.18-15.09.53:991][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.09.18-15.09.53:991][  0]LogD3D11RHI:     GPU DeviceId: 0x1b80 (for the marketing name, search the web for "GPU Device Id")
-[2017.09.18-15.09.53:991][  0]LogWindows: EnumDisplayDevices:
-[2017.09.18-15.09.53:991][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080' (P:1 D:1)
-[2017.09.18-15.09.53:991][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
-[2017.09.18-15.09.53:991][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
-[2017.09.18-15.09.53:991][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
-[2017.09.18-15.09.53:991][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2017.09.18-15.09.53:991][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080
-[2017.09.18-15.09.53:991][  0]LogD3D11RHI:   Driver Version: 382.05 (internal:22.21.13.8205, unified:382.05)
-[2017.09.18-15.09.53:991][  0]LogD3D11RHI:      Driver Date: 5-1-2017
-[2017.09.18-15.09.53:991][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.09.18-15.09.54:016][  0]LogD3D11RHI: Async texture creation enabled
-[2017.09.18-15.09.54:026][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.09.18-15.09.54:073][  0]LogShaderCompilers: Guid format shader working directory is -27 characters bigger than the processId version (../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Intermediate/Shaders/WorkingDirectory/15036/).
-[2017.09.18-15.09.54:073][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/AmplifiedRobot-Chris/AppData/Local/Temp/UnrealShaderWorkingDir/19BECDB940A0FF6C4DEA06B9B35B6692/'.
-[2017.09.18-15.09.54:073][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2017.09.18-15.09.54:757][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2017.09.18-15.09.54:796][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2017.09.18-15.09.54:834][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2017.09.18-15.09.54:874][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2017.09.18-15.09.54:912][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2017.09.18-15.09.54:952][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2017.09.18-15.09.54:990][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.09.18-15.09.55:030][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2017.09.18-15.09.55:063][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2017.09.18-15.09.55:100][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2017.09.18-15.09.55:138][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
-[2017.09.18-15.09.55:175][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
-[2017.09.18-15.09.55:213][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
-[2017.09.18-15.09.55:250][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
-[2017.09.18-15.09.55:287][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
-[2017.09.18-15.09.55:363][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
-[2017.09.18-15.09.55:363][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.09.18-15.09.55:393][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2017.09.18-15.09.55:469][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2017.09.18-15.09.55:492][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2017.09.18-15.09.55:528][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2017.09.18-15.09.55:566][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.09.18-15.09.55:603][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2017.09.18-15.09.55:641][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2017.09.18-15.09.55:641][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2017.09.18-15.09.56:008][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2017.09.18-15.09.56:077][  0]LogDerivedDataCache: Loaded boot cache 0.07s 93MB C:/Users/AmplifiedRobot-Chris/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
-[2017.09.18-15.09.56:077][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/AmplifiedRobot-Chris/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
-[2017.09.18-15.09.56:077][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.09.18-15.09.56:077][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.09.18-15.09.56:077][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.09.18-15.09.56:077][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.09.18-15.09.56:089][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.09.18-15.09.56:101][  0]LogDerivedDataCache: Using Local data cache path C:/Users/AmplifiedRobot-Chris/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.09.18-15.09.56:109][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2017.09.18-15.09.56:109][  0]LogSlate: Using Freetype 2.6.0
-[2017.09.18-15.09.56:109][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.09.18-15.09.56:109][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.09.18-15.09.56:301][  0]LogAssetRegistry: FAssetRegistry took 0.0253 seconds to start up
-[2017.09.18-15.09.56:403][  0]LogInit: Selected Device Profile: [Windows]
-[2017.09.18-15.09.56:535][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.09.18-15.09.56:779][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.09.18-15.09.56:812][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.09.18-15.09.56:812][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.09.18-15.09.56:812][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2017.09.18-15.09.56:812][  0]LogMeshReduction: No automatic mesh merging module available
-[2017.09.18-15.09.56:812][  0]LogMeshMerging: No automatic mesh merging module available
-[2017.09.18-15.09.57:093][  0]LogNetVersion: TestingUnreal , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 3426038906)
-[2017.09.18-15.09.57:263][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 2 prioritized culture(s) in 0.033541 seconds
-[2017.09.18-15.09.57:268][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
-[2017.09.18-15.09.57:268][  0]LogUObjectAllocator: 7529112 out of 0 bytes used by permanent object pool.
-[2017.09.18-15.09.57:268][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.09.18-15.09.57:322][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.09.18-15.09.59:392][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.09.18-15.09.59:432][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.09.18-15.09.59:931][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.09.18-15.10.00:241][  0]SourceControl: Source control is disabled
-[2017.09.18-15.10.00:241][  0]SourceControl: Source control is disabled
-[2017.09.18-15.10.00:279][  0]SourceControl: Source control is disabled
-[2017.09.18-15.10.00:313][  0]SourceControl: Source control is disabled
-[2017.09.18-15.10.00:739][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2017.09.18-15.10.00:915][  0]LogOcInput: OculusInput pre-init called
-[2017.09.18-15.10.01:116][  0]LogEngine: Initializing Engine...
-[2017.09.18-15.10.01:137][  0]LogHMD: Failed to initialize OpenVR with code 126
-[2017.09.18-15.10.01:326][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.09.18-15.10.01:326][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.09.18-15.10.01:435][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.09.18-15.10.01:445][  0]LogInit: XAudio2 using 'Headset Earphone (Microsoft LifeChat LX-3000)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.09.18-15.10.01:479][  0]LogInit: FAudioDevice initialized.
-[2017.09.18-15.10.01:549][  0]LogDerivedDataCache: Saved boot cache 0.07s 93MB C:/Users/AmplifiedRobot-Chris/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
-[2017.09.18-15.10.01:561][  0]LogInit: Texture streaming: Enabled
-[2017.09.18-15.10.01:649][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2017.09.18-15.10.01:812][  0]LogInit: Transaction tracking system initialized
-[2017.09.18-15.10.02:046][  0]BlueprintLog: New page: Editor Load
-[2017.09.18-15.10.02:716][  0]LocalizationService: Localization service is disabled
-[2017.09.18-15.10.03:236][  0]LogConsoleResponse: Display: 
-[2017.09.18-15.10.03:382][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.09.18-15.10.03:382][  0]LogCook: Display: Mobile HDR setting 1
-[2017.09.18-15.10.03:382][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2017.09.18-15.10.04:138][  0]LogFileCache: Scanning file cache for directory 'C:/Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/' took 0.01s
-[2017.09.18-15.10.04:173][  0]SourceControl: Source control is disabled
-[2017.09.18-15.10.04:177][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files/Epic Games/UE_4.17/FeaturePacks/StarterContent.upack)
-[2017.09.18-15.10.04:209][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
-[2017.09.18-15.10.04:231][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/Floor_400x400.uasset"
-[2017.09.18-15.10.04:239][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/Pillar_50x500.uasset"
-[2017.09.18-15.10.04:248][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
-[2017.09.18-15.10.04:255][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/Wall_400x200.uasset"
-[2017.09.18-15.10.04:262][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/Wall_400x300.uasset"
-[2017.09.18-15.10.04:267][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/Wall_400x400.uasset"
-[2017.09.18-15.10.04:273][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/Wall_500x500.uasset"
-[2017.09.18-15.10.04:279][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
-[2017.09.18-15.10.04:284][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
-[2017.09.18-15.10.04:290][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
-[2017.09.18-15.10.04:295][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
-[2017.09.18-15.10.04:301][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Collapse01.uasset"
-[2017.09.18-15.10.04:306][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Collapse02.uasset"
-[2017.09.18-15.10.04:308][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Collapse_Cue.uasset"
-[2017.09.18-15.10.04:314][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Explosion01.uasset"
-[2017.09.18-15.10.04:320][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Explosion02.uasset"
-[2017.09.18-15.10.04:322][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Explosion_Cue.uasset"
-[2017.09.18-15.10.04:328][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Fire01.uasset"
-[2017.09.18-15.10.04:329][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Fire01_Cue.uasset"
-[2017.09.18-15.10.04:337][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Fire_Sparks01.uasset"
-[2017.09.18-15.10.04:339][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
-[2017.09.18-15.10.04:345][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Light01.uasset"
-[2017.09.18-15.10.04:346][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Light01_Cue.uasset"
-[2017.09.18-15.10.04:353][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Light02.uasset"
-[2017.09.18-15.10.04:354][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Light02_Cue.uasset"
-[2017.09.18-15.10.04:361][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Smoke01.uasset"
-[2017.09.18-15.10.04:364][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Smoke01_Cue.uasset"
-[2017.09.18-15.10.04:369][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
-[2017.09.18-15.10.04:380][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Starter_Birds01.uasset"
-[2017.09.18-15.10.04:406][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Starter_Music01.uasset"
-[2017.09.18-15.10.04:407][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
-[2017.09.18-15.10.04:418][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Starter_Wind05.uasset"
-[2017.09.18-15.10.04:429][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Starter_Wind06.uasset"
-[2017.09.18-15.10.04:437][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Steam01.uasset"
-[2017.09.18-15.10.04:438][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Audio/Steam01_Cue.uasset"
-[2017.09.18-15.10.04:445][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
-[2017.09.18-15.10.04:450][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
-[2017.09.18-15.10.04:455][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
-[2017.09.18-15.10.04:461][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
-[2017.09.18-15.10.04:466][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
-[2017.09.18-15.10.04:471][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
-[2017.09.18-15.10.04:477][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
-[2017.09.18-15.10.04:484][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
-[2017.09.18-15.10.04:485][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
-[2017.09.18-15.10.04:491][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
-[2017.09.18-15.10.04:496][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
-[2017.09.18-15.10.04:501][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
-[2017.09.18-15.10.04:506][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
-[2017.09.18-15.10.04:514][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
-[2017.09.18-15.10.04:520][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
-[2017.09.18-15.10.04:522][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
-[2017.09.18-15.10.04:729][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
-[2017.09.18-15.10.04:735][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Maps/Advanced_Lighting.umap"
-[2017.09.18-15.10.04:741][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset"
-[2017.09.18-15.10.04:750][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Maps/Minimal_Default.umap"
-[2017.09.18-15.10.04:758][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset"
-[2017.09.18-15.10.04:780][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Maps/StarterMap.umap"
-[2017.09.18-15.10.04:822][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Maps/StarterMap_BuiltData.uasset"
-[2017.09.18-15.10.04:829][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_AssetPlatform.uasset"
-[2017.09.18-15.10.04:835][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Basic_Floor.uasset"
-[2017.09.18-15.10.04:841][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Basic_Wall.uasset"
-[2017.09.18-15.10.04:847][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
-[2017.09.18-15.10.04:853][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
-[2017.09.18-15.10.04:859][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
-[2017.09.18-15.10.04:865][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
-[2017.09.18-15.10.04:871][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
-[2017.09.18-15.10.04:877][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
-[2017.09.18-15.10.04:883][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
-[2017.09.18-15.10.04:890][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
-[2017.09.18-15.10.04:896][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
-[2017.09.18-15.10.04:903][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
-[2017.09.18-15.10.04:909][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
-[2017.09.18-15.10.04:915][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
-[2017.09.18-15.10.04:921][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
-[2017.09.18-15.10.04:927][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
-[2017.09.18-15.10.04:933][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Glass.uasset"
-[2017.09.18-15.10.04:939][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Ground_Grass.uasset"
-[2017.09.18-15.10.04:945][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
-[2017.09.18-15.10.04:950][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Ground_Moss.uasset"
-[2017.09.18-15.10.04:956][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
-[2017.09.18-15.10.04:961][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
-[2017.09.18-15.10.04:967][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
-[2017.09.18-15.10.04:973][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Metal_Copper.uasset"
-[2017.09.18-15.10.04:979][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Metal_Gold.uasset"
-[2017.09.18-15.10.04:986][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Metal_Rust.uasset"
-[2017.09.18-15.10.04:992][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Metal_Steel.uasset"
-[2017.09.18-15.10.04:997][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
-[2017.09.18-15.10.05:003][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
-[2017.09.18-15.10.05:008][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
-[2017.09.18-15.10.05:013][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Rock_Slate.uasset"
-[2017.09.18-15.10.05:019][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
-[2017.09.18-15.10.05:025][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
-[2017.09.18-15.10.05:030][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
-[2017.09.18-15.10.05:036][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Tech_Panel.uasset"
-[2017.09.18-15.10.05:041][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Water_Lake.uasset"
-[2017.09.18-15.10.05:047][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Water_Ocean.uasset"
-[2017.09.18-15.10.05:052][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
-[2017.09.18-15.10.05:058][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
-[2017.09.18-15.10.05:064][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Wood_Oak.uasset"
-[2017.09.18-15.10.05:069][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Wood_Pine.uasset"
-[2017.09.18-15.10.05:075][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
-[2017.09.18-15.10.05:079][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
-[2017.09.18-15.10.05:086][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/P_Explosion.uasset"
-[2017.09.18-15.10.05:092][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/P_Fire.uasset"
-[2017.09.18-15.10.05:097][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/P_Smoke.uasset"
-[2017.09.18-15.10.05:103][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/P_Sparks.uasset"
-[2017.09.18-15.10.05:109][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/P_Steam_Lit.uasset"
-[2017.09.18-15.10.05:114][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/Materials/M_Burst.uasset"
-[2017.09.18-15.10.05:119][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
-[2017.09.18-15.10.05:124][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
-[2017.09.18-15.10.05:130][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
-[2017.09.18-15.10.05:135][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
-[2017.09.18-15.10.05:140][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
-[2017.09.18-15.10.05:146][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
-[2017.09.18-15.10.05:151][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
-[2017.09.18-15.10.05:157][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
-[2017.09.18-15.10.05:162][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Particles/Materials/M_Spark.uasset"
-[2017.09.18-15.10.05:168][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/MaterialSphere.uasset"
-[2017.09.18-15.10.05:173][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_Bush.uasset"
-[2017.09.18-15.10.05:179][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_Chair.uasset"
-[2017.09.18-15.10.05:184][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_CornerFrame.uasset"
-[2017.09.18-15.10.05:190][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_Couch.uasset"
-[2017.09.18-15.10.05:196][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_Door.uasset"
-[2017.09.18-15.10.05:201][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_DoorFrame.uasset"
-[2017.09.18-15.10.05:207][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_GlassWindow.uasset"
-[2017.09.18-15.10.05:213][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
-[2017.09.18-15.10.05:218][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
-[2017.09.18-15.10.05:230][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
-[2017.09.18-15.10.05:236][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_PillarFrame.uasset"
-[2017.09.18-15.10.05:241][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_PillarFrame300.uasset"
-[2017.09.18-15.10.05:247][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_Rock.uasset"
-[2017.09.18-15.10.05:252][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_Shelf.uasset"
-[2017.09.18-15.10.05:257][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_Stairs.uasset"
-[2017.09.18-15.10.05:263][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_Statue.uasset"
-[2017.09.18-15.10.05:269][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_TableRound.uasset"
-[2017.09.18-15.10.05:275][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/SM_WindowFrame.uasset"
-[2017.09.18-15.10.05:281][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/Materials/M_Bush.uasset"
-[2017.09.18-15.10.05:286][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/Materials/M_Chair.uasset"
-[2017.09.18-15.10.05:294][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/Materials/M_Door.uasset"
-[2017.09.18-15.10.05:299][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/Materials/M_Frame.uasset"
-[2017.09.18-15.10.05:305][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/Materials/M_Lamp.uasset"
-[2017.09.18-15.10.05:310][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
-[2017.09.18-15.10.05:316][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
-[2017.09.18-15.10.05:322][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/Materials/M_Rock.uasset"
-[2017.09.18-15.10.05:328][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/Materials/M_Shelf.uasset"
-[2017.09.18-15.10.05:333][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/Materials/M_Statue.uasset"
-[2017.09.18-15.10.05:339][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
-[2017.09.18-15.10.05:344][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Props/Materials/M_TableRound.uasset"
-[2017.09.18-15.10.05:350][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Cone.uasset"
-[2017.09.18-15.10.05:356][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Cube.uasset"
-[2017.09.18-15.10.05:362][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
-[2017.09.18-15.10.05:368][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
-[2017.09.18-15.10.05:374][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Pipe.uasset"
-[2017.09.18-15.10.05:380][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
-[2017.09.18-15.10.05:386][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
-[2017.09.18-15.10.05:395][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Plane.uasset"
-[2017.09.18-15.10.05:403][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
-[2017.09.18-15.10.05:413][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Sphere.uasset"
-[2017.09.18-15.10.05:422][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Torus.uasset"
-[2017.09.18-15.10.05:429][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Trim.uasset"
-[2017.09.18-15.10.05:436][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
-[2017.09.18-15.10.05:443][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
-[2017.09.18-15.10.05:449][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
-[2017.09.18-15.10.05:460][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Tube.uasset"
-[2017.09.18-15.10.05:465][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
-[2017.09.18-15.10.05:471][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
-[2017.09.18-15.10.05:477][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
-[2017.09.18-15.10.05:508][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
-[2017.09.18-15.10.05:540][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
-[2017.09.18-15.10.05:570][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
-[2017.09.18-15.10.05:593][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
-[2017.09.18-15.10.05:627][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
-[2017.09.18-15.10.05:658][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
-[2017.09.18-15.10.05:695][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
-[2017.09.18-15.10.05:720][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
-[2017.09.18-15.10.05:758][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
-[2017.09.18-15.10.05:782][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
-[2017.09.18-15.10.05:807][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
-[2017.09.18-15.10.05:830][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
-[2017.09.18-15.10.05:859][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
-[2017.09.18-15.10.05:865][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Burst_M.uasset"
-[2017.09.18-15.10.05:872][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Bush_D.uasset"
-[2017.09.18-15.10.05:878][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Bush_N.uasset"
-[2017.09.18-15.10.05:886][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
-[2017.09.18-15.10.05:892][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
-[2017.09.18-15.10.05:899][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Chair_M.uasset"
-[2017.09.18-15.10.05:910][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Chair_N.uasset"
-[2017.09.18-15.10.05:917][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
-[2017.09.18-15.10.05:951][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
-[2017.09.18-15.10.05:960][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
-[2017.09.18-15.10.05:994][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
-[2017.09.18-15.10.06:008][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
-[2017.09.18-15.10.06:020][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
-[2017.09.18-15.10.06:042][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
-[2017.09.18-15.10.06:061][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
-[2017.09.18-15.10.06:088][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
-[2017.09.18-15.10.06:119][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
-[2017.09.18-15.10.06:146][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
-[2017.09.18-15.10.06:167][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
-[2017.09.18-15.10.06:200][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
-[2017.09.18-15.10.06:224][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
-[2017.09.18-15.10.06:242][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
-[2017.09.18-15.10.06:261][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
-[2017.09.18-15.10.06:283][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
-[2017.09.18-15.10.06:285][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
-[2017.09.18-15.10.06:297][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
-[2017.09.18-15.10.06:304][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Door_M.uasset"
-[2017.09.18-15.10.06:312][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Door_N.uasset"
-[2017.09.18-15.10.06:318][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
-[2017.09.18-15.10.06:331][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
-[2017.09.18-15.10.06:338][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
-[2017.09.18-15.10.06:345][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
-[2017.09.18-15.10.06:351][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Frame_M.uasset"
-[2017.09.18-15.10.06:360][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Frame_N.uasset"
-[2017.09.18-15.10.06:361][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Gradinet_01.uasset"
-[2017.09.18-15.10.06:396][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
-[2017.09.18-15.10.06:430][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
-[2017.09.18-15.10.06:461][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
-[2017.09.18-15.10.06:486][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
-[2017.09.18-15.10.06:523][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
-[2017.09.18-15.10.06:549][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
-[2017.09.18-15.10.06:556][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Lamp_M.uasset"
-[2017.09.18-15.10.06:568][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Lamp_N.uasset"
-[2017.09.18-15.10.06:600][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_MacroVariation.uasset"
-[2017.09.18-15.10.06:631][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
-[2017.09.18-15.10.06:661][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
-[2017.09.18-15.10.06:693][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
-[2017.09.18-15.10.06:707][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
-[2017.09.18-15.10.06:743][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
-[2017.09.18-15.10.06:771][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
-[2017.09.18-15.10.06:792][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
-[2017.09.18-15.10.06:819][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
-[2017.09.18-15.10.06:852][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
-[2017.09.18-15.10.06:874][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_RockMesh_M.uasset"
-[2017.09.18-15.10.06:902][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_RockMesh_N.uasset"
-[2017.09.18-15.10.06:939][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
-[2017.09.18-15.10.06:975][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
-[2017.09.18-15.10.07:000][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
-[2017.09.18-15.10.07:031][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
-[2017.09.18-15.10.07:064][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
-[2017.09.18-15.10.07:102][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
-[2017.09.18-15.10.07:133][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
-[2017.09.18-15.10.07:165][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
-[2017.09.18-15.10.07:173][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Shelf_M.uasset"
-[2017.09.18-15.10.07:184][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Shelf_N.uasset"
-[2017.09.18-15.10.07:185][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
-[2017.09.18-15.10.07:200][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
-[2017.09.18-15.10.07:205][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
-[2017.09.18-15.10.07:211][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Spark_Core.uasset"
-[2017.09.18-15.10.07:218][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Statue_M.uasset"
-[2017.09.18-15.10.07:225][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Statue_N.uasset"
-[2017.09.18-15.10.07:234][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_TableRound_M.uasset"
-[2017.09.18-15.10.07:245][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_TableRound_N.uasset"
-[2017.09.18-15.10.07:251][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
-[2017.09.18-15.10.07:257][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
-[2017.09.18-15.10.07:265][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
-[2017.09.18-15.10.07:272][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
-[2017.09.18-15.10.07:281][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
-[2017.09.18-15.10.07:292][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
-[2017.09.18-15.10.07:303][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Water_M.uasset"
-[2017.09.18-15.10.07:315][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Water_N.uasset"
-[2017.09.18-15.10.07:333][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
-[2017.09.18-15.10.07:348][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
-[2017.09.18-15.10.07:361][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
-[2017.09.18-15.10.07:383][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
-[2017.09.18-15.10.07:404][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
-[2017.09.18-15.10.07:433][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
-[2017.09.18-15.10.07:448][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
-[2017.09.18-15.10.07:469][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
-[2017.09.18-15.10.07:485][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
-[2017.09.18-15.10.07:554][  0]LogRenderer: Reallocating scene render targets to support 256x256 Format 10 NumSamples 1 (Frame:1).
-[2017.09.18-15.10.07:635][  0]LogSavePackage: Save=10.37ms
-[2017.09.18-15.10.07:635][  0]LogSavePackage: Moving '../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Saved/Floor_400x4000B49762B405C61D6085134A450AFF8C1.tmp' to '../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/Floor_400x400.uasset'
-[2017.09.18-15.10.07:638][  0]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/StarterContent/Architecture/Floor_400x400.uasset
-[2017.09.18-15.10.07:639][  0]LogFeaturePack: Warning: Inserted 1 feature packs
-[2017.09.18-15.10.07:641][  0]Cmd: MAP LOAD FILE="../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.09.18-15.10.07:642][  0]LightingResults: New page: Lighting Build
-[2017.09.18-15.10.07:674][  0]MapCheck: New page: Map Check
-[2017.09.18-15.10.07:674][  0]LightingResults: New page: Lighting Build
-[2017.09.18-15.10.09:515][  0]LogTexture: Display: Building textures: HQ_Lightmap0_5 (AutoDXT, 64X64)
-[2017.09.18-15.10.09:515][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 2048X2048)
-[2017.09.18-15.10.09:515][  0]LogTexture: Display: Building textures: HQ_Lightmap0_4 (AutoDXT, 2048X2048)
-[2017.09.18-15.10.09:515][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 2048X2048)
-[2017.09.18-15.10.09:515][  0]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 2048X2048)
-[2017.09.18-15.10.09:515][  0]LogTexture: Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 2048X2048)
-[2017.09.18-15.10.09:515][  0]LogTexture: Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 2048X2048)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_4 (DXT1, 2048X2048)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_3 (DXT1, 2048X2048)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_5 (DXT1, 64X64)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: SkyOcclusion0_1 (AutoDXT, 2048X1024)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: SkyOcclusion0_2 (AutoDXT, 2048X1024)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: SkyOcclusion0_3 (AutoDXT, 2048X1024)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: SkyOcclusion0_4 (AutoDXT, 2048X1024)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: SkyOcclusion0_5 (AutoDXT, 64X32)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_0 (G8, 2048X1024)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_1 (G8, 2048X1024)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_3 (G8, 2048X1024)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_2 (G8, 2048X1024)
-[2017.09.18-15.10.09:516][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_4 (G8, 2048X1024)
-[2017.09.18-15.10.10:072][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_5 (G8, 2048X1024)
-[2017.09.18-15.10.10:072][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_6 (G8, 2048X1024)
-[2017.09.18-15.10.10:072][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_7 (G8, 64X32)
-[2017.09.18-15.10.10:105][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2017.09.18-15.10.10:116][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.09.18-15.10.10:137][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.09.18-15.10.10:178][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 41.121ms to complete.
-[2017.09.18-15.10.10:178][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 2.536
-[2017.09.18-15.10.10:238][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2017.09.18-15.10.10:299][  0]LogCollectionManager: Loaded 0 collections in 0.001206 seconds
-[2017.09.18-15.10.10:367][  0]LogFileCache: Scanning file cache for directory 'C:/Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Saved/Collections/' took 0.01s
-[2017.09.18-15.10.10:367][  0]LogFileCache: Scanning file cache for directory 'C:/Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/Developers/AmplifiedRobotChris/Collections/' took 0.01s
-[2017.09.18-15.10.10:367][  0]LogFileCache: Scanning file cache for directory 'C:/Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/Collections/' took 0.01s
-[2017.09.18-15.10.10:367][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2017.09.18-15.10.10:374][  0]LogContentBrowser: Native class hierarchy populated in 0.0067 seconds. Added 2386 classes and 500 folders.
-[2017.09.18-15.10.10:424][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2017.09.18-15.10.10:452][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2017.09.18-15.10.10:485][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2017.09.18-15.10.10:502][  0]LogSlate: Took 0.000138 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.09.18-15.10.10:504][  0]LogSlate: Took 0.000123 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2017.09.18-15.10.10:507][  0]LogSlate: Took 0.000113 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2017.09.18-15.10.10:539][  0]LogRenderer: Reallocating scene render targets to support 1020x576 Format 10 NumSamples 1 (Frame:1).
-[2017.09.18-15.10.10:570][  0]LogSlate: Took 0.000172 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.09.18-15.10.10:671][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2017.09.18-15.10.10:671][  0]LogLoad: (Engine Initialization) Total time: 18.66 seconds
-[2017.09.18-15.10.10:671][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2017.09.18-15.10.10:671][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.09.18-15.10.10:671][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.09.18-15.10.10:705][  0]LogAssetRegistry: Asset discovery search completed in 14.4261 seconds
-[2017.09.18-15.10.10:706][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2017.09.18-15.10.10:706][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000032 seconds (updated 0 objects)
-[2017.09.18-15.10.10:773][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.09.18-15.10.36:712][ 98]LogActorFactory: Actor Factory created Sphere
-[2017.09.18-15.10.37:579][201]LogActorFactory: Actor Factory created Sphere
-[2017.09.18-15.11.01:782][ 97]LogSlate: Took 0.000143 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.09.18-15.11.01:870][ 97]LogSavePackage: Save=62.76ms
-[2017.09.18-15.11.01:870][ 97]LogSavePackage: Moving '../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Saved/FirstPersonExampleMap76232ABE4AB91F1E193E18A7E76F5C7C.tmp' to '../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
-[2017.09.18-15.11.01:873][ 97]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap
-[2017.09.18-15.11.02:936][ 97]LogSlate: Took 0.000141 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.09.18-15.11.02:955][ 97]LogSavePackage: Save=1041.27ms
-[2017.09.18-15.11.02:955][ 97]LogSavePackage: Moving '../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Saved/FirstPersonExampleMap_BuiltDataA68F791C447A93B65C714CB0B0E31EDA.tmp' to '../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/FirstPersonBP/Maps/FirstPersonExampleMap_BuiltData.uasset'
-[2017.09.18-15.11.02:957][ 97]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/FirstPersonBP/Maps/FirstPersonExampleMap_BuiltData.uasset
-[2017.09.18-15.18.05:122][810]LogDirectoryWatcher: Warning: Failed to begin reading directory changes for ../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Plugins/. Error: The system cannot find the file specified. (0x00000002)
-[2017.09.18-15.18.07:704][118]Cmd: CLOSE_SLATE_MAINFRAME
-[2017.09.18-15.18.07:760][118]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
-[2017.09.18-15.18.07:761][118]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2017.09.18-15.18.08:036][119]Cmd: QUIT_EDITOR
-[2017.09.18-15.18.08:075][119]LogExit: Preparing to exit.
-[2017.09.18-15.18.08:695][119]LogDirectoryWatcher: A directory notification for 'C:/Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/' was aborted.
-[2017.09.18-15.18.08:710][119]LogExit: Editor shut down
-[2017.09.18-15.18.08:714][119]LogExit: Transaction tracking system shut down
-[2017.09.18-15.18.08:849][119]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2017.09.18-15.18.08:849][119]LogDirectoryWatcher: A directory notification for '../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/' was aborted.
-[2017.09.18-15.18.08:849][119]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2017.09.18-15.18.08:849][119]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
-[2017.09.18-15.18.08:849][119]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
-[2017.09.18-15.18.08:911][119]LogExit: Object subsystem successfully closed.
-[2017.09.18-15.18.08:942][119]LogD3D11RHI: Shutdown
-[2017.09.18-15.18.08:942][119]LogD3D11RHI: CleanupD3DDevice
-[2017.09.18-15.18.09:010][119]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.09.18-15.18.09:030][119]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (530)
-[2017.09.18-15.18.09:030][119]LogModuleManager: Shutting down and abandoning module SceneOutliner (528)
-[2017.09.18-15.18.09:030][119]LogModuleManager: Shutting down and abandoning module AddContentDialog (526)
-[2017.09.18-15.18.09:030][119]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.17/FeaturePacks/' was aborted.
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module WidgetCarousel (525)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module EditorWidgets (522)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module CollectionManager (520)
-[2017.09.18-15.18.09:031][119]LogDirectoryWatcher: A directory notification for 'C:/Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/Collections/' was aborted.
-[2017.09.18-15.18.09:031][119]LogDirectoryWatcher: A directory notification for 'C:/Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/Developers/AmplifiedRobotChris/Collections/' was aborted.
-[2017.09.18-15.18.09:031][119]LogDirectoryWatcher: A directory notification for 'C:/Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Saved/Collections/' was aborted.
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module StatsViewer (518)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module FoliageEdit (516)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module LandscapeEditor (514)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module MeshPaintMode (512)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (510)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module ActorPickerMode (508)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module GeometryMode (506)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module TextureAlignMode (504)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module BspMode (502)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (500)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module HardwareSurvey (498)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (496)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module AutomationWorker (494)
-[2017.09.18-15.18.09:031][119]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (492)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (490)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module PlacementMode (489)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (486)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (484)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (482)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (480)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (478)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module Media (477)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (474)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module CharacterAI (472)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module AudioCapture (470)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module SequenceRecorder (469)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module SmartSnapping (466)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module SessionServices (464)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module ViewportSnapping (462)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module ViewportInteraction (460)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module ClothPainter (458)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module LogVisualizer (456)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module IntroTutorials (454)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (453)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (450)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (448)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (446)
-[2017.09.18-15.18.09:032][119]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (445)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (442)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (440)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (438)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module InputBindingEditor (436)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module MergeActors (434)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module SizeMap (432)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module TreeMap (430)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module ReferenceViewer (428)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (426)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module LocalizationService (425)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module HardwareTargeting (422)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (420)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module UndoHistory (418)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module XmlParser (416)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module Blutility (414)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (412)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (411)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (408)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module SettingsEditor (406)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module ProjectLauncher (404)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module SessionFrontend (402)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module ProfilerClient (400)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module DeviceManager (398)
-[2017.09.18-15.18.09:150][119]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (397)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module AutomationController (394)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module AutomationWindow (392)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module Layers (390)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (388)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module DetailCustomizations (386)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module PackagesDialog (384)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module Persona (382)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (381)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module AnimGraph (379)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module Kismet (376)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module ClassViewer (374)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module Toolbox (372)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module ModuleUI (370)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module MovieSceneTools (368)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module OutputLog (366)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module GammaUI (364)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module Documentation (362)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (360)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module MovieScene (358)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module Niagara (356)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module NiagaraEditor (355)
-[2017.09.18-15.18.09:203][119]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (352)
-[2017.09.18-15.18.09:204][119]LogModuleManager: Shutting down and abandoning module LauncherPlatform (350)
-[2017.09.18-15.18.09:204][119]LogModuleManager: Shutting down and abandoning module AnalyticsET (348)
-[2017.09.18-15.18.09:204][119]LogModuleManager: Shutting down and abandoning module PortalServices (346)
-[2017.09.18-15.18.09:204][119]LogModuleManager: Shutting down and abandoning module PortalRpc (344)
-[2017.09.18-15.18.09:204][119]LogModuleManager: Shutting down and abandoning module MessagingRpc (342)
-[2017.09.18-15.18.09:204][119]LogModuleManager: Shutting down and abandoning module AIModule (340)
-[2017.09.18-15.18.09:204][119]LogModuleManager: Shutting down and abandoning module GameplayDebugger (339)
-[2017.09.18-15.18.09:204][119]LogModuleManager: Shutting down and abandoning module AITestSuite (337)
-[2017.09.18-15.18.09:204][119]LogModuleManager: Shutting down and abandoning module ProfilerService (334)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module TaskGraph (332)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module SteamVRController (330)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (328)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (326)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module OculusInput (324)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (322)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (320)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module CableComponent (318)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (316)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module AndroidPermission (314)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (310)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module HTML5Networking (308)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module AlembicImporter (306)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module AlembicLibrary (305)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module GeometryCache (304)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (303)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (298)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module PluginBrowser (296)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (294)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (292)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module DesktopPlatform (291)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module UObjectPlugin (288)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (286)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (284)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module GitSourceControl (282)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module SourceControl (281)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (278)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (276)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (274)
-[2017.09.18-15.18.09:397][119]LogModuleManager: Shutting down and abandoning module Paper2DEditor (272)
-[2017.09.18-15.18.09:398][119]LogModuleManager: Shutting down and abandoning module MeshPaint (271)
-[2017.09.18-15.18.09:398][119]LogModuleManager: Shutting down and abandoning module LevelEditor (269)
-[2017.09.18-15.18.09:398][119]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (268)
-[2017.09.18-15.18.09:398][119]LogModuleManager: Shutting down and abandoning module MainFrame (266)
-[2017.09.18-15.18.09:398][119]LogModuleManager: Shutting down and abandoning module HotReload (265)
-[2017.09.18-15.18.09:398][119]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (260)
-[2017.09.18-15.18.09:398][119]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (258)
-[2017.09.18-15.18.09:399][119]LogModuleManager: Shutting down and abandoning module PhysXVehicles (256)
-[2017.09.18-15.18.09:399][119]LogModuleManager: Shutting down and abandoning module OculusEditor (254)
-[2017.09.18-15.18.09:399][119]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (252)
-[2017.09.18-15.18.09:399][119]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (250)
-[2017.09.18-15.18.09:399][119]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (248)
-[2017.09.18-15.18.09:399][119]LogModuleManager: Shutting down and abandoning module UdpMessaging (246)
-[2017.09.18-15.18.09:500][119]LogModuleManager: Shutting down and abandoning module TcpMessaging (244)
-[2017.09.18-15.18.09:600][119]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (242)
-[2017.09.18-15.18.09:600][119]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (240)
-[2017.09.18-15.18.09:600][119]LogModuleManager: Shutting down and abandoning module FacialAnimation (238)
-[2017.09.18-15.18.09:600][119]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (236)
-[2017.09.18-15.18.09:600][119]LogModuleManager: Shutting down and abandoning module GraphEditor (235)
-[2017.09.18-15.18.09:600][119]LogModuleManager: Shutting down and abandoning module ContentBrowser (233)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (230)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module Paper2D (228)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (226)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module WmfMedia (224)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module PacketHandler (222)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (220)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (218)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module Overlay (216)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module OverlayEditor (215)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module MediaAssets (212)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module VREditor (210)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module StringTableEditor (208)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (206)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (204)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module FunctionalTesting (202)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (200)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (199)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module UMG (196)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module UMGEditor (195)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module Sequencer (194)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module MessageLog (191)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module SlateReflector (186)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module Slate (184)
-[2017.09.18-15.18.09:601][119]LogModuleManager: Shutting down and abandoning module EditorStyle (182)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module MRMesh (180)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (178)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (176)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module XAudio2 (174)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module Networking (172)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module Core (168)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module LevelSequence (162)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module MeshUtilities (160)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (159)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (158)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (157)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (155)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (153)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module MaterialBaking (149)
-[2017.09.18-15.18.09:604][119]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (146)
-[2017.09.18-15.18.09:605][119]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
-[2017.09.18-15.18.09:679][119]LogDerivedDataCache: Shutdown
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module Messaging (101)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
-[2017.09.18-15.18.09:679][119]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module InputCore (60)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module Settings (58)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module PhysXCooking (56)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module SteamVR (54)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module OculusHMD (52)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
-[2017.09.18-15.18.09:680][119]LogOnline: Display: Unloading online subsystem: NULL
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module XMPP (43)
-[2017.09.18-15.18.09:680][119]LogModuleManager: Shutting down and abandoning module HTTP (41)
-[2017.09.18-15.18.09:680][119]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2017.09.18-15.18.09:680][119]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B92E77F40-48E9-B92E-F27E-949A16FECD55%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.17.1-3586342%2B%2B%2BUE4%2BRelease-4.17&UserID=80e556ea4f294f5880807c859242e18b%7C44a5bbd9b4c047bebee3ff75b3de2876%7Cc931ec47-2b88-4fbb-ae5f-78644b48dc63&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.09.18-15.18.09:685][119]LogModuleManager: Shutting down and abandoning module SSL (40)
-[2017.09.18-15.18.09:686][119]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2017.09.18-15.18.09:687][119]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2017.09.18-15.18.09:690][119]LogExit: Exiting.
-[2017.09.18-15.18.09:701][119]Log file closed, 09/18/17 16:18:09
+[2017.09.18-15.28.10:152][  0]LogInit: Selected Device Profile: [Windows]
+[2017.09.18-15.28.10:153][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.09.18-15.28.10:166][  0]LogInit: Computer: WINDOWS-7CI49S2
+[2017.09.18-15.28.10:166][  0]LogInit: User: AmplifiedRobotChris
+[2017.09.18-15.28.10:166][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.09.18-15.28.10:166][  0]LogInit: High frequency timer resolution =3.515630 MHz
+[2017.09.18-15.28.10:166][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.09.18-15.28.10:166][  0]LogMemory: Platform Memory Stats for Windows
+[2017.09.18-15.28.10:166][  0]LogMemory: Process Physical Memory: 279.30 MB used, 279.30 MB peak
+[2017.09.18-15.28.10:166][  0]LogMemory: Process Virtual Memory: 282.33 MB used, 282.33 MB peak
+[2017.09.18-15.28.10:166][  0]LogMemory: Physical Memory: 5035.70 MB used,  11291.32 MB free, 16327.02 MB total
+[2017.09.18-15.28.10:166][  0]LogMemory: Virtual Memory: 681.88 MB used,  11291.32 MB free, 134217728.00 MB total
+[2017.09.18-15.28.10:323][  0]LogInit: Using OS detected language (en-US).
+[2017.09.18-15.28.10:323][  0]LogInit: Using OS detected locale (en-GB).
+[2017.09.18-15.28.10:326][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.09.18-15.28.10:841][  0]LogD3D11RHI: D3D11 adapters:
+[2017.09.18-15.28.10:876][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080' (Feature Level 11_0)
+[2017.09.18-15.28.10:876][  0]LogD3D11RHI:       8110/0/8163 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.09.18-15.28.10:877][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.09.18-15.28.10:877][  0]LogD3D11RHI:       0/0/8163 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.09.18-15.28.10:877][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.09.18-15.28.10:882][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.09.18-15.28.10:882][  0]LogD3D11RHI:     GPU DeviceId: 0x1b80 (for the marketing name, search the web for "GPU Device Id")
+[2017.09.18-15.28.10:882][  0]LogWindows: EnumDisplayDevices:
+[2017.09.18-15.28.10:882][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080' (P:1 D:1)
+[2017.09.18-15.28.10:882][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2017.09.18-15.28.10:882][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2017.09.18-15.28.10:882][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2017.09.18-15.28.10:882][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.09.18-15.28.10:882][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080
+[2017.09.18-15.28.10:882][  0]LogD3D11RHI:   Driver Version: 382.05 (internal:22.21.13.8205, unified:382.05)
+[2017.09.18-15.28.10:882][  0]LogD3D11RHI:      Driver Date: 5-1-2017
+[2017.09.18-15.28.10:882][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.09.18-15.28.10:907][  0]LogD3D11RHI: Async texture creation enabled
+[2017.09.18-15.28.10:917][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.09.18-15.28.10:964][  0]LogShaderCompilers: Guid format shader working directory is -27 characters bigger than the processId version (../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Intermediate/Shaders/WorkingDirectory/15172/).
+[2017.09.18-15.28.10:964][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/AmplifiedRobot-Chris/AppData/Local/Temp/UnrealShaderWorkingDir/598F7FE4499F1402E50666850BDB1F56/'.
+[2017.09.18-15.28.10:964][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2017.09.18-15.28.11:641][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2017.09.18-15.28.11:681][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2017.09.18-15.28.11:721][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2017.09.18-15.28.11:761][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2017.09.18-15.28.11:800][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2017.09.18-15.28.11:839][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2017.09.18-15.28.11:879][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.09.18-15.28.11:918][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2017.09.18-15.28.11:952][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2017.09.18-15.28.11:989][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2017.09.18-15.28.12:029][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2017.09.18-15.28.12:068][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2017.09.18-15.28.12:105][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2017.09.18-15.28.12:143][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2017.09.18-15.28.12:181][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2017.09.18-15.28.12:257][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2017.09.18-15.28.12:257][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.09.18-15.28.12:288][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2017.09.18-15.28.12:366][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2017.09.18-15.28.12:389][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2017.09.18-15.28.12:426][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2017.09.18-15.28.12:465][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.09.18-15.28.12:504][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2017.09.18-15.28.12:543][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2017.09.18-15.28.12:543][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2017.09.18-15.28.12:925][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2017.09.18-15.28.12:995][  0]LogDerivedDataCache: Loaded boot cache 0.07s 93MB C:/Users/AmplifiedRobot-Chris/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2017.09.18-15.28.12:996][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/AmplifiedRobot-Chris/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
+[2017.09.18-15.28.12:996][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.09.18-15.28.12:996][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.09.18-15.28.12:996][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.09.18-15.28.12:996][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.09.18-15.28.13:007][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.09.18-15.28.13:020][  0]LogDerivedDataCache: Using Local data cache path C:/Users/AmplifiedRobot-Chris/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.09.18-15.28.13:027][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.09.18-15.28.13:027][  0]LogSlate: Using Freetype 2.6.0
+[2017.09.18-15.28.13:027][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.09.18-15.28.13:027][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.09.18-15.28.13:223][  0]LogAssetRegistry: FAssetRegistry took 0.0247 seconds to start up
+[2017.09.18-15.28.13:311][  0]LogInit: Selected Device Profile: [Windows]
+[2017.09.18-15.28.13:423][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.09.18-15.28.13:658][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.09.18-15.28.13:689][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.09.18-15.28.13:689][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.09.18-15.28.13:689][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2017.09.18-15.28.13:689][  0]LogMeshReduction: No automatic mesh merging module available
+[2017.09.18-15.28.13:689][  0]LogMeshMerging: No automatic mesh merging module available
+[2017.09.18-15.28.13:953][  0]LogNetVersion: TestingUnreal , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 3426038906)
+[2017.09.18-15.28.14:113][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 2 prioritized culture(s) in 0.032477 seconds
+[2017.09.18-15.28.14:118][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
+[2017.09.18-15.28.14:118][  0]LogUObjectAllocator: 7529104 out of 0 bytes used by permanent object pool.
+[2017.09.18-15.28.14:118][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.09.18-15.28.14:166][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.09.18-15.28.16:118][  0]LogSubstanceCoreModule: Substance [CPU] Engine Loaded, Max Texture Size = 2048
+[2017.09.18-15.28.16:141][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.09.18-15.28.16:175][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.09.18-15.28.16:707][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.09.18-15.28.17:039][  0]SourceControl: Source control is disabled
+[2017.09.18-15.28.17:564][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.09.18-15.28.17:755][  0]LogOcInput: OculusInput pre-init called
+[2017.09.18-15.28.18:089][  0]LogEngine: Initializing Engine...
+[2017.09.18-15.28.18:103][  0]LogHMD: Failed to initialize OpenVR with code 126
+[2017.09.18-15.28.18:272][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.09.18-15.28.18:272][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.09.18-15.28.18:372][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.09.18-15.28.18:381][  0]LogInit: XAudio2 using 'Headset Earphone (Microsoft LifeChat LX-3000)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.09.18-15.28.18:398][  0]LogInit: FAudioDevice initialized.
+[2017.09.18-15.28.18:466][  0]LogDerivedDataCache: Saved boot cache 0.07s 93MB C:/Users/AmplifiedRobot-Chris/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2017.09.18-15.28.18:472][  0]LogInit: Texture streaming: Enabled
+[2017.09.18-15.28.18:578][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.09.18-15.28.18:754][  0]LogInit: Transaction tracking system initialized
+[2017.09.18-15.28.18:996][  0]BlueprintLog: New page: Editor Load
+[2017.09.18-15.28.19:691][  0]LocalizationService: Localization service is disabled
+[2017.09.18-15.28.20:214][  0]LogConsoleResponse: Display: 
+[2017.09.18-15.28.20:361][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.09.18-15.28.20:361][  0]LogCook: Display: Mobile HDR setting 1
+[2017.09.18-15.28.20:361][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2017.09.18-15.28.20:917][  0]LogFileCache: Scanning file cache for directory 'C:/Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/' took 0.01s
+[2017.09.18-15.28.21:203][  0]Cmd: MAP LOAD FILE="../../../../../../Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.09.18-15.28.21:204][  0]LightingResults: New page: Lighting Build
+[2017.09.18-15.28.21:238][  0]MapCheck: New page: Map Check
+[2017.09.18-15.28.21:238][  0]LightingResults: New page: Lighting Build
+[2017.09.18-15.28.21:606][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2017.09.18-15.28.21:614][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.09.18-15.28.21:631][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.09.18-15.28.21:672][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 40.817ms to complete.
+[2017.09.18-15.28.21:672][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.469
+[2017.09.18-15.28.21:792][  0]LogCollectionManager: Loaded 0 collections in 0.001139 seconds
+[2017.09.18-15.28.21:859][  0]LogFileCache: Scanning file cache for directory 'C:/Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Saved/Collections/' took 0.01s
+[2017.09.18-15.28.21:859][  0]LogFileCache: Scanning file cache for directory 'C:/Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/Developers/AmplifiedRobotChris/Collections/' took 0.01s
+[2017.09.18-15.28.21:859][  0]LogFileCache: Scanning file cache for directory 'C:/Users/AmplifiedRobot-Chris/Documents/GitHub/Unreal-test/TestingUnreal/Content/Collections/' took 0.01s
+[2017.09.18-15.28.21:859][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2017.09.18-15.28.21:866][  0]LogContentBrowser: Native class hierarchy populated in 0.0069 seconds. Added 2400 classes and 506 folders.
+[2017.09.18-15.28.21:917][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.09.18-15.28.21:945][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.09.18-15.28.21:979][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.09.18-15.28.21:995][  0]LogSlate: Took 0.000147 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.09.18-15.28.21:996][  0]LogSlate: Took 0.000121 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.09.18-15.28.22:000][  0]LogSlate: Took 0.000110 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.09.18-15.28.22:077][  0]LogRenderer: Reallocating scene render targets to support 1020x576 Format 10 NumSamples 1 (Frame:1).
+[2017.09.18-15.28.22:206][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.09.18-15.28.22:206][  0]LogLoad: (Engine Initialization) Total time: 13.28 seconds
+[2017.09.18-15.28.22:206][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2017.09.18-15.28.22:206][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.09.18-15.28.22:206][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.09.18-15.28.22:560][  0]LogAssetRegistry: Asset discovery search completed in 9.3585 seconds
+[2017.09.18-15.28.22:561][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2017.09.18-15.28.22:561][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000032 seconds (updated 0 objects)
+[2017.09.18-15.28.22:563][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.09.18-15.28.22:602][  0]LogSlate: Took 0.000137 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
